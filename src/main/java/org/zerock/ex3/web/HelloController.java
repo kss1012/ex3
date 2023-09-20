@@ -19,4 +19,6 @@ public class HelloController {
                                     @RequestParam("amount") int amount){
         return new HelloResponseDto(name, amount);
     }
+
+
 }
