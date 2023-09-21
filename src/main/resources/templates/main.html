@@ -13,11 +13,23 @@
 
 
 </div>
+
+<div id="box">
+    <style>#source {color: blue}</style>
+    <p>Hi there!</p>
+    <span style="display: none">hidden message</span>
+</div>
 <script>
+    let box = document.querySelector("#box");
+  //  console.log(box.innerHTML);
+    //console.log(box.textContent);
+    console.log(box.innerText);
     const fruits = document.querySelectorAll(".fruits p");
     const fruitArray = Array.from(fruits);
-    console.log(fruitArray);
-    const fruitNames = fruitArray.map(fruit => fruit.textContent);
+    // console.log(fruitArray);
+   // const fruitNames = fruitArray.map(fruit => fruit.textContent);
+    const fruitNames = fruits.map(fruit => fruit.textContent);
+    console.log(fruitNames);
 </script>
 </body>
 </html>
